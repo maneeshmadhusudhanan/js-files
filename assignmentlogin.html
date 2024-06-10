@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assignmentfile.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-2/5 h-3/5 ml-96 mt-12 p-12 shadow-lg">
+        <div class="ml-20"> 
+ 
+         <h1 class="font-sans text-3xl  ml-16">LOG IN</h1>
+         <br>
+         
+ 
+         <div>
+             <input type="text" id="text1" name="email" placeholder="Username" class="border border-solid border-2 rounded-lg w-46 h-10"> 
+             <br><br>
+             <input type="password" id="text2" name="pwd" placeholder="Password" maxlength="8" class="border border-solid border-2 rounded-lg w-46 h-10">      
+          </div>
+ 
+          <div>
+             <button onclick="login()" class="w-64 h-10 bg-black hover:opacity-75 text-white border-2 rounded-lg p-2 mt-6">LOG IN</button>
+          </div>
+ 
+         <div class="flex gap-6 h-10 pt-6">
+             <div>
+             <a href="signup.html" class="text-sky-600 hover:underline">CREATE AN ACCOUNT</a>
+             </div>
+ 
+             <div>
+             <input type="checkbox" name="remember" value="RememeberMe" class="">REMEMBER ME
+             </div>
+         </div>
+     </div> 
+ </div>
+
+
+
+   
+
+    <script>
+        let x=localStorage.getItem("user");
+        let y=localStorage.getItem("pwd");
+        
+    </script>
+</body>
+</html>

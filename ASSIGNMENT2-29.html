@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Finder</title>
+</head>
+<body>
+    <h4>A. to enter the list of Students in an array and upon reading a value from text box. Print the name of student on screen.</h4>
+        <h4>Array list:-['AJAY', 'MIDHUN', 'RAHUL', 'MANEESH', 'DIDEESH']</h4>
+    <h3>ENTER STUDENT NAME FROM:</h3>
+
+    <input type="text" id="secondname" placeholder="Enter student ID">
+    <button onclick="funtionStudent()">Find Student</button>
+    <p id="firstname"></p>
+
+    <script>
+        const students = ['AJAY', 'MIDHUN', 'RAHUL', 'MANEESH', 'DIDEESH'];
+
+        function funtionStudent() {
+            let name = document.getElementById("secondname").value;
+            let found = false;
+            
+            for (let i = 0; i < students.length; i++) {
+                if (name === students[i]) {
+                    found = true;
+                    break;
+                }
+            }
+            
+            if (found) {
+                document.getElementById("firstname").innerHTML = name;
+            } else {
+                document.getElementById("firstname").innerHTML = "no name found in array list!";
+            }
+        }
+    </script>
+</body>
+</html>

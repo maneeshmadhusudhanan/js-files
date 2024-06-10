@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICKET BOOKING</title>
+    <script src="assignmentticket14-29.js"></script>
+</head>
+<body><center>
+
+    <div style="border:80px; border-color: black; ">
+    <form style="border: rgb(226, 54, 54); background-color: rgb(210, 209, 207); width: 70%; height: 20%; padding: 20%">
+
+<h1 style=" font-size: large x-large;color: rgb(21, 72, 44); " >
+    TVM, THEATRES
+</h1>
+        <h2 style=" font-style: italic; text-align: center;">MOVIE BOOKING</h2>
+        <hr>
+            <p id="" style="text-align: center; font-size: large ;font-weight:bold;">FILM NAME : <span id="s1"></span><br> NO OF TICKETS :  <span id="s2"></span> tickets booked<br>BOOKING ID : <span id="s3"></span></p>
+        
+            <p style="font-size: x-large; font-weight: bold; font-family: 'Times New Roman', Times, serif; text-align: center">THANK YOU...</p>
+    </form>
+</div>
+<script>
+        
+
+        document.getElementById("s1").innerHTML=localStorage.getItem("Film");
+        document.getElementById("s2").innerHTML=localStorage.getItem("Tickets");
+        document.getElementById("s3").innerHTML=localStorage.getItem("Name");
+
+
+    </script>
+    </center>
+
+</body>
+</html>
+	

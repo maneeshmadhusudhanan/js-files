@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>calculator</title>
+ </head>
+ <body>
+   <h1>calculator</h1>
+   <table style="background-color:#223233;  border-radius:8px ;border:1 ;width:200 ;height:100;padding:3;"  >
+     <tr>
+       <td colspan="4" bgcolor:#00FF00 width="50 height="50><input id="calc1" type="text" placeholder="0"></td> 
+     </tr>
+     <tr>
+       <td><b><input type="button" value="7"style="background-color:#6D7A7B;color:white;" onclick="butnclick(7)"></b></td>
+       <td><input type="button" value="8" onclick="butnclick(8)" style="background-color: #6D7A7B;color:white" ></td>
+       <td><input type="button" value="9" onclick="butnclick(9)" style="background-color: #6D7A7B;color:white" ></td>
+       <td><input type="button" value="/" onclick="butnclick('/')" style="background-color: #0aa6cf;color:white" bgcolor:#20B2AA></td>
+     </tr>
+     <tr>
+       <td><input type="button" value="4" onclick="butnclick(4)" style="background-color: #6D7A7B;color:white" ></td>
+       <td><input type="button" value="5" onclick="butnclick(5)" style="background-color: #6D7A7B;color:white" ></td>
+       <td><input type="button" value="6"  onclick="butnclick(6)"style="background-color: #6D7A7B;color:white" ></td>
+       <td><input type="button" value="x" onclick="butnclick('*')" style="background-color:#0aa6cf;color:white"></td>
+     </tr>
+     <tr>
+       <td><input type="button" value="1" onclick="butnclick(1)" style="background-color: #6D7A7B;color:white" ></td>
+       <td><input type="button" value="2" onclick="butnclick(2)" style="background-color: #6D7A7B;color:white" ></td>
+       <td><input type="button" value="3"onclick="butnclick(3)" style="background-color: #6D7A7B;color:white" ></td>
+       <td><input type="button" value="-" onclick="butnclick('-')" style="background-color: #0aa6cf;color:white"></td>
+     </tr>
+     <tr>
+       <td><input type="button" value="0"onclick="butnclick(0)" style="background-color: #6D7A7B;color:white"></td>
+       <td><input type="button" value="." onclick="butnclick('.')" style="background-color: #6D7A7B;color:white"></td>
+       <td><input type="button" value="=" onclick="display()" bgcolor:#DE3136 style:background-color:red;color:white></td>
+       <td><input type="button" value="+" onclick="butnclick('+')" style="background-color: #0aa6cf;color:white"></td>
+     </tr>
+   
+   </table>
+<script>
+
+  function butnclick(value){
+    calc1.value=calc1.value+value;
+  }
+
+  function display(){
+    calc1.value=eval(calc1.value);
+  }
+    
+
+
+</script>
+
+ </body>
+ 
+</html>

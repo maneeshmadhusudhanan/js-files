@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h3> 1. SWAPpING</h3>
+
+    
+
+    <h4> A. Program to swap two numbers w/o using temporary variable
+
+        Values should be taken from text box & printed on screen on a button click(Function)
+        </h4>
+    <input id="demo4" placeholder="enter first variable:" type="text">
+
+   
+    
+    
+<input id="demo5" placeholder="enter second variable: " type="text">
+<button onclick="swap1()">click here to change </button>
+<p id="demo3"></p>
+<p id="demo2"></p>
+    <script> 
+           function swap1()
+           {
+
+          
+           let a= parseInt(document.getElementById("demo4").value);
+           let b=parseInt(document.getElementById("demo5").value);
+           
+    
+ 
+             a=a+b;
+             b=a-b;
+             a=a-b;
+
+           document.getElementById("demo3").innerHTML=a
+           document.getElementById("demo2").innerHTML=b
+            
+}
+ </script>
+</body>
+</html>
